@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conociendo Grecia</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Conociendo Grecia</h1>
+    <p>Grecia: un destino, miles de historias. </p>
+</header>
+
+<hr>
+
+<nav>
+    <ul>
+        <li>Historia y Cultura</li>
+        <li>Ciudades</li>
+        <li>Lugares</li>
+        <li>Contactos</li>
+    </ul>
+</nav>
+
+<hr>
+
+<main>
+
+    <h2>Historia y cultura de Grecia</h2>
+
+    <p>
+        Grecia es un lugar donde la historia y la cultura están
+        presentes en todos lados. No solo se destaca por sus mitos
+        y leyendas, sino también por su ubicación y su geografía,
+        que tuvieron un papel muy importante en su desarrollo.
+    </p>
+
+    <p>
+        Su territorio, formado por montañas, islas y costas bañadas
+        por el mar Egeo, hizo que Grecia estuviera siempre conectada
+        con diferentes pueblos y culturas. Las ciudades-estado y las
+        rutas marítimas convirtieron al país en un importante punto
+        de encuentro entre Oriente y Occidente.
+    </p>
+
+    <p>
+        Entre sus barrios emblemáticos, Plaka destaca por sus calles
+        pintorescas, Kolonaki por su elegancia y Monastiraki por su
+        vibrante mercado. Además, Kifisia ofrece un ambiente más
+        sofisticado, mientras que Gazi y Psiri son conocidos por su
+        vida nocturna y el arte urbano.
+    </p>
+
+    <p>
+        Grecia, con sus barrios, es un puente entre la tradición
+        y la modernidad.
+    </p>
+
+    <h2>Sus principales características</h2>
+
+    <ul>
+        <li>Lengua y alfabeto comunes</li>
+        <li>Avances en ciencia y matemáticas</li>
+        <li>Organización en polis</li>
+        <li>Religión politeísta</li>
+        <li>Importancia del teatro</li>
+        <li>Mitología importante</li>
+        <li>Nacimiento de la democracia</li>
+        <li>Desarrollo de la filosofía</li>
+        <li>Creación de los Juegos Olímpicos</li>
+        <li>Búsqueda de la belleza y el arte</li>
+    </ul>
+
+    <h2>Datos clave de Grecia</h2>
+
+    <dl>
+        <dt>Capital:</dt>
+        <dd>Atenas</dd>
+
+        <dt>Población:</dt>
+        <dd>10,4 millones de habitantes</dd>
+
+        <dt>Idioma oficial:</dt>
+        <dd>Griego</dd>
+
+        <dt>Moneda:</dt>
+        <dd>Euro</dd>
+
+        <dt>Clima:</dt>
+        <dd>Mediterráneo, con veranos cálidos y secos e inviernos suaves</dd>
+    </dl>
+    </p>
+
+    <hr>
+
+<h2>Ciudades para visitar</h2>
+
+<p> Grecia cuenta con numerosas ciudades y regiones que ofrecen historia, cultura, arquitectura y paisajes únicos. Algunas de las más conocidas son: </p>
+
+<ul>
+
+<li>
+    <h3>Atenas</h3>
+    <p>
+        Capital de Grecia y una de las ciudades más importantes
+        del país. Se destaca por su historia, la Acrópolis y sus
+        numerosos monumentos de la Antigua Grecia.
+    </p>
+</li>
+
+<li>
+    <h3>Tesalónica</h3>
+    <p>
+        Es una de las ciudades más importantes del norte de Grecia.
+        Se caracteriza por su historia, sus monumentos y su ubicación
+        junto al mar.
+    </p>
+</li>
+
+<li>
+    <h3>Nafplio</h3>
+    <p>
+        Ciudad ubicada en la región del Peloponeso, conocida por su
+        arquitectura, sus calles históricas y sus fortalezas.
+    </p>
+</li>
+
+<li>
+    <h3>Heraclión</h3>
+    <p>
+        Es la capital de la isla de Creta y un importante centro
+        cultural e histórico. Desde allí se puede visitar el Palacio
+        de Cnosos, relacionado con la antigua civilización minoica.
+    </p>
+</li>
+
+<li>
+    <h3>La Canea</h3>
+    <p>
+        Ciudad de Creta conocida por su antiguo puerto, sus calles
+        tradicionales y su arquitectura influenciada por diferentes
+        culturas.
+    </p>
+</li>
+
+<li>
+    <h3>Corfú</h3>
+    <p>
+        Ciudad principal de la isla de Corfú, ubicada en las Islas
+        Jónicas. Se destaca por su arquitectura, sus playas y su
+        historia.
+    </p>
+</li>
+
+</ul>
+
+    <hr>
+
+<p><h2>Lugares turísticos</h2>
+
+<p>
+    Entre sus principales atractivos se encuentran sus islas,
+    playas, monumentos históricos y sitios arqueológicos.
+    A continuación, se presentan algunos de los lugares más
+    interesantes para visitar en Grecia.
+</p>
+
+<h3>Olimpia</h3>
+
+<p>
+    Olimpia es un antiguo santuario de Grecia y es conocida como
+    el lugar donde nacieron los Juegos Olímpicos. Allí se encuentran
+    restos de templos, instalacion
+    Se encuentra en el Peloponeso occidental, en un valle rodeado
+    de naturaleza. Se puede recorrer el sitio arqueológico, conocer
+    el antiguo estadio y visitar los museos de la zona, donde se
+    conservan objetos y esculturas de la Antigua Grecia.
+</p>
+
+<h3>Santorini</h3>
+
+<p>
+    Santorini es una de las islas griegas más conocidas. Está
+    ubicada en el mar Egeo, en el extremo sur de las islas Cícladas.
+    Se caracteriza por sus casas blancas, sus iglesias con cúpulas
+    azules, sus acantilados y sus increíbles vistas sobre el mar Egeo.
+</p>
+
+<p>
+    La isla tiene además un origen volcánico que forma parte de su
+    identidad. Se puede recorrer el pueblo de Oia, disfrutar de sus
+    famosos atardeceres, conocer la caldera volcánica, visitar el
+    sitio arqueológico de Akrotiri y realizar paseos en barco.
+</p>
+
+<h3>Creta</h3>
+
+<p>
+    Creta es la isla más grande de Grecia y combina playas, montañas,
+    pueblos tradicionales y una gran riqueza histórica. Es especialmente
+    conocida por su relación con la antigua civilización minoica y por
+    sus paisajes naturales.
+</p>
+
+<p>
+    Se pueden visitar lugares históricos como el Palacio de Cnosos,
+    recorrer ciudades como La Canea y Retino, disfrutar de playas como
+    Elafonisi y Balos y realizar caminatas por paisajes naturales como
+    la Garganta de Samaria.
+</p>
+
+<p>
+    También se puede conocer la gastronomía y las tradiciones de los
+    pueblos cretenses. Es un destino que permite combinar historia,
+    naturaleza, playas y cultura.
+</p>
+
+</main>
+
+<hr>
+
+<footer> <h2>Contactos</h2>
+
+<address>
+    <p><strong>Dirección central:</strong> Calle de los Mitos 456, Piso 3, Atenas Ficticia, Grecia</p>
+    <p><strong>Teléfono para reservas:</strong> +30 (123) 456-7890</p>
+    <p><strong>WhatsApp:</strong> +30 (098) 765-4321</p>
+    <p><strong>Correo electrónico:</strong> hola@conociendogrecia-falso.com</p>
+</address>
+
+<p>
+    <em>Horario de atención: Lunes a Sábados de 09:00 a 18:00 hs.</em>
+</p>
+
+<p>
+    &copy; 2026 Conociendo Grecia Viajes. Todos los derechos reservados.
+</p>
+
+</footer>
+
+</body>
+</html>
