@@ -1,34 +1,38 @@
+<!-- datos de la pagina general-->>
+
 <!DOCTYPE html>
 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Conociendo Grecia</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+
+<!--titulo de la pagina-->
 
 <header>
     <h1>Conociendo Grecia</h1>
     <p>Grecia: un destino, miles de historias. </p>
 </header>
 
-<hr>
-
+<!-- menu-lista-->
 <nav>
     <ul>
-        <li>Historia y Cultura</li>
-        <li>Ciudades</li>
-        <li>Lugares</li>
-        <li>Contactos</li>
+        <li><a href="#historia">Historia y Cultura</a></li>
+        <li><a href="#ciudades">Ciudades</a></li>
+        <li><a href="#lugares">Lugares</a></li>
+        <li><a href="#contactos">Contactos</a></li>
     </ul>
 </nav>
 
-<hr>
+
+<!-- datos de historia y cultura-->
 
 <main>
-
-    <h2>Historia y cultura de Grecia</h2>
+    <h2 id="historia">Historia y cultura de Grecia</h2>
 
     <p>
         Grecia es un lugar donde la historia y la cultura están
@@ -93,9 +97,10 @@
     </dl>
     </p>
 
-    <hr>
 
-<h2>Ciudades para visitar</h2>
+<!-- datos de ciudades-->
+
+<h2 id="ciudades">Ciudades para visitar</h2>
 
 <p> Grecia cuenta con numerosas ciudades y regiones que ofrecen historia, cultura, arquitectura y paisajes únicos. Algunas de las más conocidas son: </p>
 
@@ -156,9 +161,10 @@
 
 </ul>
 
-    <hr>
 
-<p><h2>Lugares turísticos</h2>
+<!--datos de lugares-->
+
+<h2 id="lugares">Lugares turísticos</h2>
 
 <p>
     Entre sus principales atractivos se encuentran sus islas,
@@ -219,9 +225,10 @@
 
 </main>
 
-<hr>
 
-<footer> <h2>Contactos</h2>
+<!--datos de contacto -->
+<footer>
+ <h2 id="contactos">Contactos</h2>
 
 <address>
     <p><strong>Dirección central:</strong> Calle de los Mitos 456, Piso 3, Atenas Ficticia, Grecia</p>
