@@ -17,6 +17,8 @@ header {
     padding: 30px;
 }
 
+header
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -73,4 +75,9 @@ footer h2 {
 
 footer p {
     margin: 8px;
+}
+
+.prueba {
+background-color:red;
+font-size: 100px;
 }
