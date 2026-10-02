@@ -1,23 +1,37 @@
 
-/* estilo pagina general*/
+/* colores*/
+:root {
+    --azul-principal: #1d5d8f;
+    --azul-secundario: #2878b5;
+    --dorado: #d4a017;
+    --blanco: white;
+    --fondo: #f7f7f7;
+    --negro: #181717;
+}
+
+
+/* pagina principal*/
+
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
     margin: 0;
-    background-color: #f7f7f7;
-    color: #181717;
+    background-color: var(--fondo);
+    color: var(--negro);
 }
 
 
-/* titulo*/
+/* titulo */
+
 header {
-    background-color: #1d5d8f;
-    color: white;
+    background-color: var(--azul-principal);
+    color: var(--blanco);
     text-align: center;
     padding: 30px;
 }
 
-header
+
+/* nav*/
 
 nav ul {
     list-style: none;
@@ -30,6 +44,10 @@ nav li {
     display: inline-block;
     margin: 0 20px;
 }
+
+
+/* CONTENIDO */
+
 main {
     max-width: 1000px;
     margin: 30px auto;
@@ -37,13 +55,13 @@ main {
 }
 
 h2 {
-    color: #1d5d8f;
-    border-bottom: 2px solid #d4a017;
+    color: var(--azul-principal);
+    border-bottom: 2px solid var(--dorado);
     padding-bottom: 8px;
 }
 
 h3 {
-    color: #2878b5;
+    color: var(--azul-secundario);
 }
 
 p {
@@ -51,27 +69,27 @@ p {
 }
 
 
-/* listas */
+/* lista*/
 
 ul {
     line-height: 1.8;
 }
 
 
-/* contactos */
+/* CONTACTOS */
 
 footer {
-    background-color: #1d5d8f;
-    color: white;
+    background-color: var(--azul-principal);
+    color: var(--blanco);
     text-align: center;
     padding: 30px;
     margin-top: 40px;
 }
+
 footer h2 {
-    color: white;
-    border-bottom: 2px solid #d4a017;
+    color: var(--blanco);
+    border-bottom: 2px solid var(--dorado);
 }
-  
 
 footer p {
     margin: 8px;
