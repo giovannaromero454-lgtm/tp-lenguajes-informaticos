@@ -1,4 +1,3 @@
-
 /* colores*/
 :root {
     --azul-principal: #1d5d8f;
@@ -56,7 +55,6 @@ main {
 
 h2 {
     color: var(--azul-principal);
-    border-bottom: 2px solid var(--dorado);
     padding-bottom: 8px;
 }
 
@@ -99,13 +97,54 @@ div {
     margin-right: 64%;
 }
 
+/* LOGO */
 .logo {
     width: 100px;
     float: left;
 
 }
+
 .prueba {
-background-color:red;
-font-size: 100px;
+    background-color: red;
+    font-size: 100px;
+}
+
+/* CONTENEDOR */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.Box {
+    border: 5px solid #1f5f8b;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.datos-clave {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: 30px;
+    row-gap: 0;
+    margin-top: 25px;
+}
+
+.datos-clave dt {
+    padding: 16px 0;
+    border-bottom: 1px solid #d6e1e8;
+    font-weight: bold;
+    color: #1f5f8b;
+}
+
+.datos-clave dd {
+    padding: 16px 0;
+    border-bottom: 1px solid #d6e1e8;
+    margin: 0;
+    line-height: 1.4;
 }
 
