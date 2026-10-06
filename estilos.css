@@ -13,7 +13,7 @@
 /* pagina principal*/
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 18px;
     margin: 0;
     background-color: var(--fondo);
@@ -34,15 +34,25 @@ header {
 /* nav*/
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 nav li {
     display: inline-block;
     margin: 0 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 9px 16px;
+    margin: 5px;
+    color: var(--blanco);
+    background-color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+    border-radius: 80px;
+    text-decoration: none;
 }
 
 
@@ -95,17 +105,17 @@ footer p {
 }
 
 div {
-    margin-right: 55%;
+    margin-right: 60%;
 }
+
 
 /* LOGO */
 .logo {
     width: 150px;
-margin-bottom: 200px;
     float: left;
-
+    position: relative;
+    bottom: 35px;
 }
-
 
 
 /* CONTENEDOR */
@@ -118,12 +128,12 @@ margin-bottom: 200px;
 }
 
 .Box {
-    border: 5px solid #E8DCC4;
+    border: 5px solid var(--beige);
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
     width: 100%;
-    background-color: #E8DCC4;
+    background-color: var(--beige);
 }
 
 .datos-clave {
@@ -137,7 +147,7 @@ margin-bottom: 200px;
 .datos-clave dt {
     padding: 16px 0;
     font-weight: bold;
-    color: #1d5d8f;
+    color: var(--azul-principal);
 }
 
 .datos-clave dd {
@@ -145,4 +155,3 @@ margin-bottom: 200px;
     margin: 0;
     line-height: 1.4;
 }
-
