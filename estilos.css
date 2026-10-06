@@ -6,6 +6,7 @@
     --blanco: white;
     --fondo: #f7f7f7;
     --negro: #181717;
+    --beige: #E8DCC4;
 }
 
 
@@ -94,20 +95,18 @@ footer p {
 }
 
 div {
-    margin-right: 64%;
+    margin-right: 55%;
 }
 
 /* LOGO */
 .logo {
-    width: 100px;
+    width: 150px;
+margin-bottom: 200px;
     float: left;
 
 }
 
-.prueba {
-    background-color: red;
-    font-size: 100px;
-}
+
 
 /* CONTENEDOR */
 .layout {
@@ -119,11 +118,12 @@ div {
 }
 
 .Box {
-    border: 5px solid #1f5f8b;
+    border: 5px solid #E8DCC4;
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
     width: 100%;
+    background-color: #E8DCC4;
 }
 
 .datos-clave {
@@ -136,14 +136,12 @@ div {
 
 .datos-clave dt {
     padding: 16px 0;
-    border-bottom: 1px solid #d6e1e8;
     font-weight: bold;
-    color: #1f5f8b;
+    color: #1d5d8f;
 }
 
 .datos-clave dd {
     padding: 16px 0;
-    border-bottom: 1px solid #d6e1e8;
     margin: 0;
     line-height: 1.4;
 }
