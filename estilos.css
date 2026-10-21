@@ -339,3 +339,53 @@ border-radius: 15px;
     margin-top: 5px;
     margin-bottom: 14px;
 }
+
+/* centra y nombra img Historia */
+
+.Historia-grecia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin: 25px auto;
+    box-sizing: border-box;
+}
+
+.Historia-grecia figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.Historia-grecia img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.Historia-grecia figcaption {
+    margin-top: 10px;
+    color: var(--azul-principal);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* para que se achique si lo vemos en un celu  */
+
+@media (max-width: 600px) {
+    .Historia-grecia {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Historia-grecia figure {
+        flex: none;
+        width: 100%;
+        max-width: 350px;
+    }
+}
