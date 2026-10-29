@@ -340,52 +340,49 @@ border-radius: 15px;
     margin-bottom: 14px;
 }
 
-/* centra y nombra img Historia */
-
-.Historia-grecia {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    width: 100%;
+/* Carrusel de Historia de Grecia */
+#carouselExampleAutoplaying {
+    max-width: 600px;
     margin: 25px auto;
-    box-sizing: border-box;
 }
 
-.Historia-grecia figure {
-    flex: 1;
-    min-width: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.Historia-grecia img {
-    display: block;
+/* Tamaño de las imágenes */
+#carouselExampleAutoplaying .carousel-item img {
     width: 100%;
-    height: 200px;
+    height: 320px;
     object-fit: cover;
-    border-radius: 8px;
+    padding: 0;
+    margin: 0;
 }
 
-.Historia-grecia figcaption {
-    margin-top: 10px;
+/* Contenedor de los botones */
+#carouselExampleAutoplaying > .d-flex {
+    margin-top: 5px;
+    padding: 0;
+    min-height: 0;
+}
+
+/* Indicadores */
+#carouselExampleAutoplaying .carousel-indicators {
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botones de control */
+#carouselExampleAutoplaying .d-flex > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#carouselExampleAutoplaying .btn-icon {
+    margin: 0;
+}
+#carouselExampleAutoplaying .carousel-item figcaption {
+    text-align: center;
+    margin-top: 8px;
     color: var(--azul-principal);
-    font-weight: bold;
     font-size: 16px;
-}
-
-/* para que se achique si lo vemos en un celu  */
-
-@media (max-width: 600px) {
-    .Historia-grecia {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .Historia-grecia figure {
-        flex: none;
-        width: 100%;
-        max-width: 350px;
-    }
+    font-weight: bold;
 }
