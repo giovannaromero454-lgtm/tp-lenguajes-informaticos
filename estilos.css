@@ -24,10 +24,18 @@ body {
 /* titulo */
 
 header {
-    background-color: var(--azul-principal);
-    color: var(--blanco);
-    text-align: center;
-    padding: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(Content/Grecia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    padding: 80px 30px;
+}
+
+header h1,
+header p {
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -93,7 +101,7 @@ footer {
     border-top: 4px solid var(--dorado);
     text-align: left;
 }
- 
+
 .footer-contenido {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1.6fr 1fr;
@@ -102,7 +110,7 @@ footer {
     margin: 0 auto;
     padding: 40px 25px;
 }
- 
+
 footer h2 {
     color: var(--blanco);
     font-size: 1.05rem;
@@ -110,48 +118,48 @@ footer h2 {
     padding-bottom: 8px;
     border-bottom: 2px solid var(--dorado);
 }
- 
+
 footer p {
     margin: 0 0 12px;
     line-height: 1.5;
 }
- 
+
 footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
- 
+
 footer li {
     margin-bottom: 10px;
 }
- 
+
 footer address {
     font-style: normal;
 }
- 
+
 footer a {
     color: var(--blanco);
     text-decoration: none;
 }
- 
+
 footer a:hover {
     text-decoration: underline;
     text-decoration-color: var(--dorado);
     text-underline-offset: 4px;
 }
- 
+
 footer a:focus-visible {
     outline: 2px solid var(--dorado);
     outline-offset: 3px;
 }
- 
+
 .footer-logo {
     width: 130px;
     max-width: 100%;
     margin-bottom: 12px;
 }
- 
+
 /* barra de abajo, como la franja legal de visitgreece.gr */
 .footer-legal {
     margin: 0;
@@ -159,21 +167,21 @@ footer a:focus-visible {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
- 
+
 @media (max-width: 800px) {
     .footer-contenido {
         grid-template-columns: 1fr 1fr;
     }
 }
- 
+
 @media (max-width: 500px) {
     .footer-contenido {
         grid-template-columns: 1fr;
     }
 }
- 
+
 /* ICONOS DE CONTACTO */
- 
+
 .contacto-lista li {
     display: flex;
     align-items: flex-start;
@@ -182,7 +190,7 @@ footer a:focus-visible {
     line-height: 1.4;
     overflow-wrap: anywhere;
 }
- 
+
 .icono {
     width: 22px;
     height: 22px;
@@ -193,7 +201,7 @@ footer a:focus-visible {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
- 
+
 /* texto que solo leen los lectores de pantalla */
 .solo-lectores {
     position: absolute;
@@ -203,19 +211,19 @@ footer a:focus-visible {
     clip: rect(0 0 0 0);
     white-space: nowrap;
 }
- 
+
 /* BOTONES DE CONTACTO (solo icono) */
- 
+
 .contacto-botones {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
- 
+
 .contacto-botones li {
     margin: 0;
 }
- 
+
 .boton-icono {
     display: flex;
     align-items: center;
@@ -226,28 +234,28 @@ footer a:focus-visible {
     border-radius: 50%;
     transition: background-color 0.2s;
 }
- 
+
 .boton-icono:hover,
 .boton-icono:focus-visible {
     background-color: var(--dorado);
     text-decoration: none;
 }
- 
+
 .boton-icono:hover .icono,
 .boton-icono:focus-visible .icono {
     stroke: var(--azul-principal);
 }
- 
+
 /* el menu de arriba (nav ul / nav li / nav a) tambien se aplicaba al footer: lo anulamos solo ahi */
 footer nav ul {
     display: block;
 }
- 
+
 footer nav li {
     display: block;
     margin: 0 0 10px;
 }
- 
+
 footer nav a {
     display: inline;
     margin: 0;
@@ -256,15 +264,9 @@ footer nav a {
     border: none;
     border-radius: 0;
 }
+
 /* termina el footer */
 
-/* LOGO */
-.logo {
-    width: 150px;
-    float: left;
-    position: relative;
-    bottom: 35px;
-}
 
 
 /* CONTENEDOR */
@@ -311,14 +313,14 @@ footer nav a {
     padding: 0;
     margin: 25px 0;
 }
-    
+
 /*Cada Ciudad*/
 .listas-ciudades li {
-list-style: none;
-background-color: var(--blanco);
-padding: 18px;
-margin-bottom: 25px;
-border-radius: 15px;
+    list-style: none;
+    background-color: var(--blanco);
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 15px;
 }
 
 /*Imagen de Cada Ciudad*/
@@ -356,7 +358,7 @@ border-radius: 15px;
 }
 
 /* Contenedor de los botones */
-#carouselExampleAutoplaying > .d-flex {
+#carouselExampleAutoplaying>.d-flex {
     margin-top: 5px;
     padding: 0;
     min-height: 0;
@@ -370,7 +372,7 @@ border-radius: 15px;
 }
 
 /* Botones de control */
-#carouselExampleAutoplaying .d-flex > div:last-child {
+#carouselExampleAutoplaying .d-flex>div:last-child {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -379,6 +381,7 @@ border-radius: 15px;
 #carouselExampleAutoplaying .btn-icon {
     margin: 0;
 }
+
 #carouselExampleAutoplaying .carousel-item figcaption {
     text-align: center;
     margin-top: 8px;
