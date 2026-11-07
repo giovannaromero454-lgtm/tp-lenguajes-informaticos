@@ -13,7 +13,7 @@
 /* pagina principal*/
 
 body {
-    font-family: arial, sans-serif;
+    font-family: Georgia, serif;
     font-size: 18px;
     margin: 0;
     background-color: var(--fondo);
@@ -34,9 +34,15 @@ header {
 }
 
 header h1 {
-    font-size: 42px;
-    font-weight: bold;
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    margin: 50px;
+    position: relative;
+    top: 45px;
+    margin-left: 0;
 }
+
 header p {
     font-size: 18px;
 }
@@ -46,26 +52,42 @@ header p {
 
 nav.navbar {
     background-color: var(--azul-principal);
-    padding: 10px 20px;
+    padding: 3px 20px;
 }
 
 nav.navbar .navbar-nav {
-    gap: 5px;
+    gap: 20px;
+    align-items: center;
 }
 
-nav.navbar .nav-link{
-  color: var(--blanco);
-  background-color: var(--azul-principal);
- border: 1px solid var(--azul-principal);
- border-radius: 80px;
- padding: 9px 16px;
- margin: 5px;
- text-decoration: none;
+nav.navbar .nav-link {
+    color: var(--blanco);
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 12px 16px;
+    margin: 0;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
 }
 
-nav.navbar .nav-link:hover {
-    opacity: 0.8;
+nav.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--blanco);
+    transition: 0.3s;
 }
+
+nav.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+
 
 /* CONTENIDO */
 
