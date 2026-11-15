@@ -368,21 +368,51 @@ footer nav a {
 }
 
 /* Carrusel de Historia de Grecia */
-#carouselStackedBottom {
+#carruselHistoria {
     max-width: 800px;
     margin: 30px auto;
 }
 
-/* Imágenes del carrusel */
-#carouselStackedBottom .carousel-item img {
+/* magenes del carrusel */
+#carruselHistoria .carousel-item img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* Contenedor de las imágenes */
-#carouselStackedBottom .carousel-inner {
+/* contenedor de las imagenes */
+#carruselHistoria .carousel-inner {
     border-radius: 10px;
     overflow: hidden;
+}
+}
+/* modo oscuro */
+.dark-mode {
+    --fondo: #181717;
+    --negro: #f7f7f7;
+    --blanco: #252525;
+    --azul-principal: #ffffff;
+    --azul-secundario: #ffffff;
+    --dorado: #d4a017;
+    --beige: #292929;
+}
+/* boton modo oscuro*/
+
+#modoOscuro {
+    background-color: var(--azul-secundario);
+    color: var(--blanco);
+    border: 2px solid var(--dorado);
+    border-radius: 25px;
+    padding: 9px 18px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* efecto al pasar el mouse */
+#modoOscuro:hover {
+    background-color: var(--dorado);
+    color: var(--azul-principal);
+    transform: scale(1.05);
 }
