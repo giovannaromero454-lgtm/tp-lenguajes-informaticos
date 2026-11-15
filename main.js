@@ -10,3 +10,16 @@ function mostrarContenido() {
             boton.textContent = "Ver más"
         }
 }
+const boton = document.getElementById("modoOscuro");
+
+boton.addEventListener("click", function() {
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        boton.textContent = "Modo claro";
+    } else {
+        boton.textContent = "Modo oscuro";
+    }
+
+});
