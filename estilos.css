@@ -294,7 +294,7 @@ footer nav a {
 
 
 
-/* CONTENEDOR */
+/* Columnas */
 .layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -303,6 +303,16 @@ footer nav a {
     margin: 40px auto;
 }
 
+/* Adaptación a dispositivos moviles*/
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        width: 95%;
+        gap: 20px;
+    }
+}
+
+/*Estilos de las cajas*/
 .Box {
     border: 5px solid var(--beige);
     border-radius: 15px;
@@ -320,6 +330,8 @@ footer nav a {
     margin-top: 25px;
 }
 
+
+/*Estilos de los titulos y descripciones*/
 .datos-clave dt {
     padding: 16px 0;
     font-weight: bold;
@@ -386,6 +398,7 @@ footer nav a {
     border-radius: 10px;
     overflow: hidden;
 }
+
 /* modo oscuro */
 .dark-mode {
     --fondo: #181717;
@@ -396,6 +409,7 @@ footer nav a {
     --dorado: #d4a017;
     --beige: #292929;
 }
+
 /* boton modo oscuro*/
 
 #modoOscuro {
@@ -411,6 +425,24 @@ footer nav a {
 
 /* efecto al pasar el mouse */
 #modoOscuro:hover {
+    background-color: var(--dorado);
+    color: var(--azul-principal);
+    transform: scale(1.05);
+}
+
+/* Boton ver mas*/
+.boton-ver-mas {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    border: 2px solid var(--dorado);
+    border-radius: 25px;
+    padding: 9px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-ver-mas:hover {
     background-color: var(--dorado);
     color: var(--azul-principal);
     transform: scale(1.05);
