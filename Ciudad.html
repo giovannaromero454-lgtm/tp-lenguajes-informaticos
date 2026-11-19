@@ -3,74 +3,272 @@
 
 <head>
     <meta charset="UTF-8">
-      <link rel="stylesheet" href="estilos.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conociendo Grecia - Historia y Ciudad</title>
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- estilos -->
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body>
+<body id="top">
+
+    <!-- titulo -->
     <header>
-        <h2 >Ciudades imperdibles para conocer en Grecia</h2>
-        <p>Grecia tiene muchos lugares increibles para conocer, desde ciudades llenas de historia hasta rincones con hermosos paisajes. Algunas de las más
-            conocidas son:
-         </p>
+        <div>
+            <h1>Grecia Ficticia</h1>
+            <p>Historia, identidad y costumbres de una civilización eterna.</p>
+        </div>
     </header>
+
+    <!-- menu -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Conociendo Grecia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuGrecia" aria-controls="menuGrecia" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuGrecia">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="ciudad.html">Historia y Ciudad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><button id="modoOscuro" type="button">Modo oscuro</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contenido -->
     <main>
-        <ul>
-           <li>
-            <h3>Atenas</h3>
-            <p> Capital de Grecia y una de las ciudades más importantes
-        del país. Se destaca por su historia, la Acrópolis y sus
-        numerosos monumentos de la Antigua Grecia.
+        <section>
+            <h2>Historia y cultura de Grecia</h2>
+            <p>
+                Grecia es un lugar donde la historia y la cultura están presentes en todos lados. No solo se destaca por sus mitos
+                y leyendas, sino también por su ubicación y su geografía, que tuvieron un papel muy importante en su desarrollo.
             </p>
-           </li>
-           <li>
-            <h3>Tesalónica</h3>
-            <p>Es una de las ciudades más importantes del norte de Grecia.
-        Se caracteriza por su historia, sus monumentos y su ubicación
-        junto al mar.  
+            <p>
+                Su territorio, formado por montañas, islas y costas bañadas por el mar Egeo, hizo que Grecia estuviera siempre conectada
+                con diferentes pueblos y culturas. Las ciudades-estado y las rutas marítimas convirtieron al país en un importante punto
+                de encuentro entre Oriente y Occidente.
             </p>
-           </li>
-           <li>
-            <h3>Nafplio</h3>
-            <p>Es una hermosa ciudad del Peloponeso que se caracteriza por sus calles antiguas, su arquitectura y sus fortalezas. Es un lugar ideal para 
-                recorrer y conocer una parte diferente de Grecia.
-            </p>
-           </li>
-           <li>
-            <h3>Heraclión</h3>
-            <p>Es la capital de Creta y uno de los lugares más importantes de la isla. Desde esta ciudad se puede visitar el Palacio de Cnosos y conocer 
-                más sobre la antigua civilización monoica.
-            </p>
-           </li>
-           <li>
-            <h3>La Canea</h3>
-            <p>Esta ciudad de Creta es conocida por su antiguo puerto, sus calles tradicionales y sus edificios son influencias de distintas culturaas. Es 
-                un lugar muy interesante para caminar y descubrir.
-            </p>
-           </li>
-           <li>
-            <h3>Corfú</h3>
-            <p>Es la principal ciudad de la isla de Corfú, en las Islas Jónicas.
-                Se destaca por sus playas, su arquitectura y la historia que se puede encontrar en diferentes lugares de la ciudad.
-            </p>
-           </li>
-        </ul>
 
-        <h2>Datos claves de Grecia</h2>
-        <dl>
-            <dt>Capital:</dt>
-            <dd>Atenas</dd>
-            <dt>Población:</dt>
-            <dd>10,4 millones de habitantes</dd>
-            <dt>Idioma oficial:</dt>
-            <dd>Griego</dd>
-            <dt>moneda:</dt>
-            <dd>Euro</dd>
-            <dt>clima:</dt>
-            <dd>Mediterráneo, con veranos cálidos y secos e inviernos suaves</dd>
-        </dl>
+            <div id="contenidoExtra" hidden>
+                <p>
+                    Entre sus barrios emblemáticos, Plaka destaca por sus calles pintorescas, Kolonaki por su elegancia y Monastiraki por su
+                    vibrante mercado. Además, Kifisia ofrece un ambiente más sofisticado, mientras que Gazi y Psiri son conocidos por su
+                    vida nocturna y el arte urbano.
+                </p>
+                <p>
+                    Grecia, con sus barrios, es un puente entre la tradición y la modernidad.
+                </p>
+            </div>
+            <button id="botonVerMas" class="boton-ver-mas" onclick="mostrarContenido()" type="button">
+                Ver más
+            </button>
+        </section>
+
+        <!-- caracteristicas y datos -->
+        <section class="layout">
+            <div class="Box">
+                <h2>Sus principales características</h2>
+                <ul>
+                    <li>Lengua y alfabeto comunes</li>
+                    <li>Avances en ciencia y matemáticas</li>
+                    <li>Organización en polis</li>
+                    <li>Religión politeísta</li>
+                    <li>Importancia del teatro</li>
+                    <li>Mitología importante</li>
+                    <li>Nacimiento de la democracia</li>
+                    <li>Desarrollo de la filosofía</li>
+                    <li>Creación de los Juegos Olímpicos</li>
+                    <li>Búsqueda de la belleza y el arte</li>
+                </ul>
+            </div>
+
+            <div class="Box">
+                <h2>Datos clave de Grecia</h2>
+                <dl class="datos-clave">
+                    <dt>Capital:</dt>
+                    <dd>Atenas</dd>
+
+                    <dt>Población:</dt>
+                    <dd>10,4 millones de habitantes</dd>
+
+                    <dt>Idioma oficial:</dt>
+                    <dd>Griego</dd>
+
+                    <dt>Moneda:</dt>
+                    <dd>Euro</dd>
+
+                    <dt>Clima:</dt>
+                    <dd>Mediterráneo, con veranos cálidos y secos e inviernos suaves</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ciudades -->
+        <section>
+            <h2>Ciudades para visitar</h2>
+            <p>Grecia tiene muchos lugares increíbles para conocer, desde ciudades llenas de historia hasta rincones con hermosos paisajes. Algunas de las más conocidas son:</p>
+            <ul class="listas-ciudades">
+                <li>
+                    <img src="imagen_ciudad/Atenas.jpeg" alt="Atenas, Grecia">
+                    <h3>Atenas</h3>
+                    <p>
+                        Capital de Grecia y una de las ciudades más importantes del país. Se destaca por su historia, la
+                        Acrópolis y sus numerosos monumentos de la Antigua Grecia. <br><b>Costumbres:</b> Valoran la hospitalidad, las sobremesas largas y el
+                        café en las cafeterías tradicionales. Las celebraciones de los santos son muy importantes.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="imagen_ciudad/Tesalónica.png" alt="Tesalónica, Grecia">
+                    <h3>Tesalónica</h3>
+                    <p>
+                        Es una de las ciudades más importantes del norte de Grecia. Se caracteriza por su historia, sus monumentos y su ubicación
+                        junto al mar. <br><b>Costumbres:</b> La vida social gira en torno al café, las celebraciones de los santos y las procesiones religiosas.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="imagen_ciudad/Nafplio.jpg" alt="Nafplio, Grecia">
+                    <h3>Nafplio</h3>
+                    <p>
+                        Es una hermosa ciudad del Peloponeso que se caracteriza por sus calles antiguas, su arquitectura y sus fortalezas.
+                        Es un lugar ideal para recorrer y conocer una parte diferente de Grecia. <br><b>Costumbres:</b> La Semana Santa es muy emotiva,
+                        con procesiones del Viernes Santo y el canto de los niños el Sábado de Lázaro. Además, el carnaval veneciano y los panigyria son muy populares.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="imagen_ciudad/Heraclión.jpg" alt="Heraclión, Grecia">
+                    <h3>Heraclión</h3>
+                    <p>
+                        Es la capital de la isla de Creta y un importante centro cultural e histórico. Desde allí se puede visitar el Palacio
+                        de Cnosos, relacionado con la antigua civilización minoica. <br><b>Costumbres:</b> Las sobremesas se alargan con raki y dulces.
+                        Las festividades, como la vendimia, reúnen a la comunidad.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="imagen_ciudad/La_Canea.jpg" alt="La Canea, Grecia">
+                    <h3>La Canea</h3>
+                    <p>
+                        Ciudad de Creta conocida por su antiguo puerto, sus calles tradicionales y su arquitectura influenciada por diferentes
+                        culturas. Es un lugar muy interesante para caminar y descubrir. <br><b>Costumbres:</b> Las fiestas rurales se celebran con música,
+                        bailes y destilación de raki. Las mantidades son muy populares.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="imagen_ciudad/Corfú.jpg" alt="Corfú, Grecia">
+                    <h3>Corfú</h3>
+                    <p>
+                        Ciudad principal de la isla de Corfú, ubicada en las Islas Jónicas. Se destaca por su arquitectura, sus playas y su
+                        historia. <br><b>Costumbres:</b> Durante la Semana Santa, se lanzan jarrones de barro llenos de agua desde los balcones en el Sábado Santo, simbolizando la limpieza y la llegada de la primavera.
+                    </p>
+                </li>
+            </ul>
+        </section>
     </main>
-</body>
 
+    <!-- footer -->
+    <footer>
+        <section class="footer-contenido">
+
+            <section class="footer-marca">
+                <img class="footer-logo" src="Content/Logo-Grecia.PNG" alt="Logo de Conociendo Grecia">
+                <p><em>Un destino, miles de historias.</em></p>
+                <p>Descubrí la magia, la historia y los paisajes de la cuna de la civilización occidental.</p>
+                <p><small>💡 <strong>¿Sabías que...?</strong> Grecia cuenta con más de 6.000 islas e islotes, pero solo unas 227 están habitadas.</small></p>
+            </section>
+
+            <nav class="footer-columna" aria-label="Secciones del sitio">
+                <h2>Explorar</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ciudad.html">Historia y Ciudad</a></li>
+                    <li><a href="lugares.html">Lugares Turísticos</a></li>
+                    <li><a href="contacto.html">Oficina de Contacto</a></li>
+                    <li><a href="https://www.visitgreece.gr" target="_blank" rel="noopener noreferrer">Portal Visit Greece ↗</a></li>
+                    <li><a href="#top">↑ Volver al inicio</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-columna">
+                <h2>Contactos y Redes</h2>
+                <address>
+                    <ul class="contacto-botones">
+                        <li>
+                            <a class="boton-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Atenas+Grecia" target="_blank" rel="noopener noreferrer" aria-label="Ver ubicación en Google Maps" title="Ver ubicación en Google Maps">
+                                <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-icono" href="tel:+301234567890" aria-label="Llamar para reservas" title="Llamar para reservas">
+                                <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-icono" href="https://wa.me/300987654321" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp" title="Escribir por WhatsApp">
+                                <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-icono" href="mailto:hola@conociendogrecia-falso.com" aria-label="Enviar un correo electrónico" title="Enviar un correo electrónico">
+                                <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-icono" href="https://www.instagram.com/visitgreecegr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Oficial: @visitgreecegr" title="Instagram Oficial (@visitgreecegr)">
+                                <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+
+                <ul class="contacto-lista">
+                    <li>
+                        <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Oficial: <a href="https://www.instagram.com/visitgreecegr/" target="_blank" rel="noopener noreferrer"><strong>@visitgreecegr</strong></a></span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="footer-columna">
+                <h2>Datos para el viajero</h2>
+                <ul class="contacto-lista">
+                    <li>
+                        <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span><strong>Atención:</strong> Lun a Sáb de 09:00 a 18:00 hs.</span>
+                    </li>
+                    <li>
+                        <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span><strong>Policía Turística:</strong> 171 | <strong>Emergencias:</strong> 112</span>
+                    </li>
+                    <li>
+                        <svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Calle de los Mitos 456, Piso 3, Atenas, Grecia</span>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <p class="footer-legal">
+            <small>&copy; 2026 Conociendo Grecia Viajes. Todos los derechos reservados. | Trabajo Práctico – Lenguajes Informáticos</small>
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
 </html>
