@@ -1,75 +1,120 @@
-/* colores*/
+/* colores */
 :root {
+    --fuente-principal: 'Lora', Georgia, serif;
+    --fuente-titulos: 'Cinzel', Georgia, serif;
     --azul-principal: #1d5d8f;
     --azul-secundario: #2878b5;
     --dorado: #d4a017;
-    --blanco: white;
+    --blanco: #ffffff;
     --fondo: #f8f5ed;
     --negro: #181717;
     --beige: #f0e6d5;
 }
 
+/* reset */
+* {
+    box-sizing: border-box;
+}
 
-/* pagina principal*/
-
+/* pagina principal */
 body {
-    font-family: Georgia, serif;
+    font-family: var(--fuente-principal);
     font-size: 18px;
+    line-height: 1.6;
     margin: 0;
     background-color: var(--fondo);
     color: var(--negro);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* tipografia */
+h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 48px;
+    color: var(--blanco);
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 28px;
+    color: var(--azul-principal);
+    padding-bottom: 8px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: var(--fuente-principal);
+    font-size: 22px;
+    color: var(--azul-secundario);
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+ul, ol {
+    line-height: 1.8;
+}
 
 /* titulo */
-
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(Content/Grecia.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(Content/Grecia.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--blanco);
     text-align: left;
-    padding: 80px 30px;
+    padding: 70px 30px;
+    position: relative;
 }
 
 header h1 {
-    font-family: Georgia, serif;
-    font-size: 65px;
-    font-weight: normal;
-    margin: 50px;
-    position: relative;
-    top: 45px;
-    margin-left: 0;
+    margin: 0 0 10px 0;
 }
 
 header p {
-    font-size: 18px;
+    font-size: 20px;
+    margin: 0;
+    color: var(--blanco);
 }
 
-
-/* nav boostrap*/
-
+/* nav */
 nav.navbar {
     background-color: var(--azul-principal);
-    padding: 3px 20px;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    color: var(--blanco) !important;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 nav.navbar .navbar-nav {
-    gap: 20px;
+    display: flex;
+    gap: 15px;
     align-items: center;
 }
 
 nav.navbar .nav-link {
     color: var(--blanco);
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    padding: 12px 16px;
+    font-size: 16px;
+    padding: 10px 14px;
     margin: 0;
     text-decoration: none;
     position: relative;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
 nav.navbar .nav-link::after {
@@ -79,50 +124,183 @@ nav.navbar .nav-link::after {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: var(--blanco);
-    transition: 0.3s;
+    background-color: var(--dorado);
+    transition: width 0.3s ease;
 }
 
-nav.navbar .nav-link:hover::after {
+nav.navbar .nav-link:hover::after,
+nav.navbar .nav-link.active::after {
     width: 100%;
 }
 
+nav.navbar .nav-link:hover,
+nav.navbar .nav-link.active {
+    color: var(--blanco);
+}
 
-
-/* CONTENIDO */
-
+/* contenido */
 main {
-    max-width: 1000px;
-    margin: 30px auto;
+    max-width: 1050px;
+    margin: 35px auto;
     padding: 0 25px;
 }
 
-h2 {
+/* columnas */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    width: 100%;
+    margin: 35px auto;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* cajas */
+.Box {
+    border: 3px solid var(--beige);
+    border-radius: 12px;
+    padding: 25px;
+    background-color: var(--beige);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.datos-clave {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 20px;
+    row-gap: 0;
+    margin-top: 20px;
+}
+
+.datos-clave dt {
+    padding: 10px 0;
+    font-weight: bold;
     color: var(--azul-principal);
-    padding-bottom: 8px;
 }
 
-h3 {
-    color: var(--azul-secundario);
+.datos-clave dd {
+    padding: 10px 0;
+    margin: 0;
+    line-height: 1.5;
 }
 
-p {
-    line-height: 1.6;
+/* ciudades */
+.listas-ciudades {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
 }
 
-
-/* lista*/
-
-ul {
-    line-height: 1.8;
+.listas-ciudades li {
+    background-color: var(--blanco);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
+.listas-ciudades img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.listas-ciudades h3 {
+    color: var(--azul-principal);
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+/* carrusel */
+#carruselHistoria {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#carruselHistoria .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#carruselHistoria .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* modo oscuro */
+#modoOscuro {
+    background-color: var(--azul-secundario);
+    color: var(--blanco);
+    border: 2px solid var(--dorado);
+    border-radius: 25px;
+    padding: 8px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#modoOscuro:hover {
+    background-color: var(--dorado);
+    color: var(--azul-principal);
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    --fondo: #141414;
+    --negro: #f0f0f0;
+    --blanco: #222222;
+    --azul-principal: #ffffff;
+    --azul-secundario: #88c0ec;
+    --dorado: #e6b839;
+    --beige: #2a2a2a;
+}
+
+.dark-mode .card,
+.dark-mode .listas-ciudades li {
+    background-color: #222222;
+    border-color: #383838;
+    color: #f0f0f0;
+}
+
+/* boton ver mas */
+.boton-ver-mas {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    border: 2px solid var(--dorado);
+    border-radius: 25px;
+    padding: 9px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 15px 0;
+}
+
+.boton-ver-mas:hover {
+    background-color: var(--dorado);
+    color: var(--azul-principal);
+    transform: scale(1.05);
+}
 
 /* footer */
 footer {
-    background-color: var(--azul-principal);
-    color: var(--blanco);
-    margin-top: 40px;
+    background-color: #1d5d8f;
+    color: #ffffff;
+    margin-top: 50px;
     border-top: 4px solid var(--dorado);
     text-align: left;
 }
@@ -131,14 +309,14 @@ footer {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1.6fr 1fr;
     gap: 40px;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
     padding: 40px 25px;
 }
 
 footer h2 {
-    color: var(--blanco);
-    font-size: 1.05rem;
+    color: #ffffff;
+    font-size: 1.1rem;
     margin: 0 0 14px;
     padding-bottom: 8px;
     border-bottom: 2px solid var(--dorado);
@@ -147,6 +325,7 @@ footer h2 {
 footer p {
     margin: 0 0 12px;
     line-height: 1.5;
+    color: #ffffff;
 }
 
 footer ul {
@@ -164,7 +343,7 @@ footer address {
 }
 
 footer a {
-    color: var(--blanco);
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -185,12 +364,12 @@ footer a:focus-visible {
     margin-bottom: 12px;
 }
 
-/* barra de abajo, como la franja legal de visitgreece.gr */
 .footer-legal {
     margin: 0;
     padding: 18px 25px;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 800px) {
@@ -205,8 +384,7 @@ footer a:focus-visible {
     }
 }
 
-/* ICONOS DE CONTACTO */
-
+/* iconos de contacto */
 .contacto-lista li {
     display: flex;
     align-items: flex-start;
@@ -227,22 +405,11 @@ footer a:focus-visible {
     stroke-linejoin: round;
 }
 
-/* texto que solo leen los lectores de pantalla */
-.solo-lectores {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-}
-
-/* BOTONES DE CONTACTO (solo icono) */
-
 .contacto-botones {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    padding: 0;
 }
 
 .contacto-botones li {
@@ -271,7 +438,6 @@ footer a:focus-visible {
     stroke: var(--azul-principal);
 }
 
-/* el menu de arriba (nav ul / nav li / nav a) tambien se aplicaba al footer: lo anulamos solo ahi */
 footer nav ul {
     display: block;
 }
@@ -288,162 +454,4 @@ footer nav a {
     background: none;
     border: none;
     border-radius: 0;
-}
-
-/* termina el footer */
-
-
-
-/* Columnas */
-.layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    width: 90%;
-    margin: 40px auto;
-}
-
-/* Adaptación a dispositivos moviles*/
-@media (max-width: 768px) {
-    .layout {
-        grid-template-columns: 1fr;
-        width: 95%;
-        gap: 20px;
-    }
-}
-
-/*Estilos de las cajas*/
-.Box {
-    border: 5px solid var(--beige);
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: var(--beige);
-}
-
-.datos-clave {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    column-gap: 30px;
-    row-gap: 0;
-    margin-top: 25px;
-}
-
-
-/*Estilos de los titulos y descripciones*/
-.datos-clave dt {
-    padding: 16px 0;
-    font-weight: bold;
-    color: var(--azul-principal);
-}
-
-.datos-clave dd {
-    padding: 16px 0;
-    margin: 0;
-    line-height: 1.4;
-}
-
-/*Lista de Ciudades*/
-.listas-ciudades {
-    list-style: none;
-    padding: 0;
-    margin: 25px 0;
-}
-
-/*Cada Ciudad*/
-.listas-ciudades li {
-    list-style: none;
-    background-color: var(--blanco);
-    padding: 18px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-}
-
-/*Imagen de Cada Ciudad*/
-.listas-ciudades img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-
-/*Título de cada Ciudad*/
-.listas-ciudades h3 {
-    color: var(--azul-principal);
-    font-size: 25px;
-    margin-top: 5px;
-    margin-bottom: 14px;
-}
-
-/* Carrusel de Historia de Grecia */
-#carruselHistoria {
-    max-width: 800px;
-    margin: 30px auto;
-}
-
-/* magenes del carrusel */
-#carruselHistoria .carousel-item img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* contenedor de las imagenes */
-#carruselHistoria .carousel-inner {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* modo oscuro */
-.dark-mode {
-    --fondo: #181717;
-    --negro: #f7f7f7;
-    --blanco: #252525;
-    --azul-principal: #ffffff;
-    --azul-secundario: #ffffff;
-    --dorado: #d4a017;
-    --beige: #292929;
-}
-
-/* boton modo oscuro*/
-
-#modoOscuro {
-    background-color: var(--azul-secundario);
-    color: var(--blanco);
-    border: 2px solid var(--dorado);
-    border-radius: 25px;
-    padding: 9px 18px;
-    font-family: Georgia, serif;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-/* efecto al pasar el mouse */
-#modoOscuro:hover {
-    background-color: var(--dorado);
-    color: var(--azul-principal);
-    transform: scale(1.05);
-}
-
-/* Boton ver mas*/
-.boton-ver-mas {
-    background-color: var(--azul-principal);
-    color: var(--blanco);
-    border: 2px solid var(--dorado);
-    border-radius: 25px;
-    padding: 9px 18px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.boton-ver-mas:hover {
-    background-color: var(--dorado);
-    color: var(--azul-principal);
-    transform: scale(1.05);
 }
